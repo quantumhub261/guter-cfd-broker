@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CFD Trade-Kosten berechnen: Beispielrechnung DAX-CFD (2026)</title>
+<meta name="description" content="CFD Trade-Kosten berechnen: Beispielrechnung für eine DAX-CFD-Position mit Margin-Rechner, Spread- und Swap-Kosten.">
+<link rel="canonical" href="https://guter-cfd-broker.de/cfd-trade-kosten-berechnen">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:title" content="CFD Trade-Kosten berechnen: Beispielrechnung DAX-CFD">
+<meta property="og:description" content="Beispielrechnung für eine DAX-CFD-Position mit Margin-Rechner.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://guter-cfd-broker.de/cfd-trade-kosten-berechnen">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "CFD Trade-Kosten berechnen: Beispielrechnung DAX-CFD",
+  "url": "https://guter-cfd-broker.de/cfd-trade-kosten-berechnen",
+  "description": "CFD Trade-Kosten berechnen: Beispielrechnung für eine DAX-CFD-Position mit Margin-Rechner, Spread- und Swap-Kosten.",
+  "inLanguage": "de",
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-08-28",
+  "author": { "@type": "Organization", "name": "CFD Broker Vergleich Deutschland" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://guter-cfd-broker.de/" },
+    { "@type": "ListItem", "position": 2, "name": "Trade-Kosten berechnen", "item": "https://guter-cfd-broker.de/cfd-trade-kosten-berechnen" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Wie berechnet sich die Margin für eine CFD-Position?", "acceptedAnswer": { "@type": "Answer", "text": "Die Margin ergibt sich aus der Positionsgröße geteilt durch den Hebel. Bei einer Positionsgröße von 10.000 € und einem Hebel von 20:1 beträgt die erforderliche Margin 500 €." } },
+    { "@type": "Question", "name": "Warum wird ein Sicherheitspuffer über die Mindest-Margin hinaus empfohlen?", "acceptedAnswer": { "@type": "Answer", "text": "Ein Sicherheitspuffer reduziert das Risiko eines Margin Calls bei kurzfristigen Kursschwankungen gegen die eigene Position. Ohne Puffer kann bereits eine geringe Gegenbewegung dazu führen, dass die Position automatisch geschlossen wird." } },
+    { "@type": "Question", "name": "Sind Spread- und Swap-Kosten in der Margin-Berechnung enthalten?", "acceptedAnswer": { "@type": "Answer", "text": "Nein. Die Margin bestimmt nur das für die Positionseröffnung erforderliche Kapital. Spread, Kommission und Swap sind zusätzliche, separate Kostenkomponenten, die während der Haltedauer der Position anfallen." } }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo" aria-label="Startseite">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+      CFD Broker Vergleich
+    </a>
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="/#vergleich">Broker Vergleich</a>
+      <a href="/#regulierung">Regulierung</a>
+      <a href="/#kosten">Kosten</a>
+      <a href="/was-sind-cfds">Was sind CFDs?</a>
+      <a href="/cfd-demokonto-broker-testen">Demokonto</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Suche öffnen">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a class="btn-header" href="https://libertex.com/de/" rel="sponsored noopener" target="_blank">Zum Demokonto</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="article-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Startseite</a><span aria-hidden="true">/</span><span aria-current="page">Trade-Kosten berechnen</span>
+    </nav>
+    <span class="eyebrow">Beispielrechnung</span>
+    <h1>CFD Trade-Kosten berechnen: Beispielrechnung DAX-CFD</h1>
+    <p class="article-lead">Anhand einer beispielhaften DAX-CFD-Position zeigt dieser Artikel, wie sich Margin, Sicherheitspuffer und Mindestkapital berechnen. Der interaktive Rechner am Ende der Seite ermöglicht eigene Berechnungen mit anderen Instrumenten und Positionsgrößen.</p>
+    <div class="article-meta">
+      <span>Letzte Überprüfung: August 2026</span>
+      <span>Lesezeit: ca. 5 Min.</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container article-body">
+    <h2>Beispiel: DAX-CFD-Position mit 10.000 € Positionsgröße</h2>
+    <p>Für Hauptindizes wie den DAX liegt der ESMA-Hebel für Retail-Kunden bei maximal 20:1. Bei einer Positionsgröße von 10.000 € ergibt sich daraus eine erforderliche Margin von 500 €. Um das Risiko eines Margin Calls bei kurzfristigen Gegenbewegungen zu reduzieren, wird häufig ein zusätzlicher Sicherheitspuffer eingeplant.</p>
+
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <caption>Beispielrechnung DAX-CFD, Hebel 20:1</caption>
+        <thead><tr><th>Kennzahl</th><th>Wert</th></tr></thead>
+        <tbody>
+          <tr><td>Positionsgröße</td><td>10.000 €</td></tr>
+          <tr><td>Hebel</td><td>20:1</td></tr>
+          <tr><td>Erforderliche Margin</td><td>500 €</td></tr>
+          <tr><td>Empfohlener Sicherheitspuffer (×3)</td><td>1.500 €</td></tr>
+          <tr><td>Effektives Mindestkapital</td><td>2.000 €</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lead-note">Bei vollständiger Nutzung des Hebels 20:1 führt bereits eine Kursbewegung von 5% gegen die Position rechnerisch zum Totalverlust der eingesetzten Margin. Zu dieser Grundrechnung kommen zusätzlich Spread- und ggf. Swap-Kosten hinzu, die in der <a href="/cfd-broker-kosten-vergleich">Kostenübersicht</a> erläutert werden.</p>
+
+    <h2>Interaktiver Margin-Rechner</h2>
+    <div class="calc-wrapper fade-in">
+      <div class="calc-field">
+        <label class="calc-label" for="instrument">Instrument</label>
+        <select class="calc-select" id="instrument">
+          <option value="DAX">DAX</option>
+          <option value="EUR/USD">EUR/USD</option>
+          <option value="Gold">Gold</option>
+          <option value="Bitcoin">Bitcoin</option>
+          <option value="Einzelaktie">Einzelaktie</option>
+        </select>
+      </div>
+      <div class="calc-field">
+        <label class="calc-label" for="position">Positionsgröße (€)</label>
+        <input class="calc-input" type="number" id="position" value="10000" min="0" step="100">
+      </div>
+      <div class="calc-field">
+        <label class="calc-label" for="hebel">Hebel (automatisch, editierbar)</label>
+        <input class="calc-input" type="number" id="hebel" value="20" min="1" max="30" step="1">
+      </div>
+      <div class="calc-result">
+        <div class="calc-result-row"><span>Erforderliche Margin</span><span id="res-margin">– €</span></div>
+        <div class="calc-result-row"><span>Empfohlener Sicherheitspuffer (×3)</span><span id="res-puffer">– €</span></div>
+        <div class="calc-result-total"><span>Effektives Mindestkapital</span><span id="res-total">– €</span></div>
+      </div>
+      <div class="calc-cta">
+        <a class="btn-primary" href="https://libertex.com/de/" rel="sponsored noopener" target="_blank">Jetzt mit Demokonto testen – ohne echtes Kapital</a>
+      </div>
+    </div>
+
+    <h2>Häufig gestellte Fragen</h2>
+    <div class="faq-list" style="margin-top:16px;">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Wie berechnet sich die Margin für eine CFD-Position?<svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-answer"><p>Die Margin ergibt sich aus der Positionsgröße geteilt durch den Hebel. Bei einer Positionsgröße von 10.000 € und einem Hebel von 20:1 beträgt die erforderliche Margin 500 €.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Warum wird ein Sicherheitspuffer über die Mindest-Margin hinaus empfohlen?<svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-answer"><p>Ein Sicherheitspuffer reduziert das Risiko eines Margin Calls bei kurzfristigen Kursschwankungen gegen die eigene Position. Ohne Puffer kann bereits eine geringe Gegenbewegung dazu führen, dass die Position automatisch geschlossen wird.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Sind Spread- und Swap-Kosten in der Margin-Berechnung enthalten?<svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-answer"><p>Nein. Die Margin bestimmt nur das für die Positionseröffnung erforderliche Kapital. Spread, Kommission und Swap sind zusätzliche, separate Kostenkomponenten, die während der Haltedauer der Position anfallen.</p></div>
+      </div>
+    </div>
+
+    <h2>Weiterführende Themen</h2>
+    <div class="related-mini">
+      <a href="/cfd-broker-kosten-vergleich">Kosten im Vergleich</a>
+      <a href="/cfd-overnight-kosten-swap">Overnight-Kosten (Swap)</a>
+      <a href="/was-sind-cfds">Was sind CFDs?</a>
+      <a href="/cfd-demokonto-broker-testen">Demokonto testen</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="risk-disclosure" role="region" aria-label="Risikohinweis">
+  <div class="container risk-disclosure-inner">
+    <svg class="risk-icon" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2z"/><path d="M12 9v5"/></svg>
+    <p class="risk-text"><strong>Risikohinweis:</strong> Differenzkontrakte (CFDs) sind komplexe Instrumente, die aufgrund der Hebelwirkung mit einem hohen Risiko des schnellen Geldverlustes verbunden sind. Zwischen 74 % und 89 % der Kleinanlegerkonten verlieren Geld beim CFD-Handel (Quelle: ESMA). Dieser Inhalt dient ausschließlich Informationszwecken und stellt keine Anlageberatung dar. Letzte Aktualisierung: August 2026.</p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><svg class="icon footer-brand-icon" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>CFD Broker Vergleich</div>
+        <p>Unabhängiger Informationsguide für CFD Broker in Deutschland. Bildungsorientierte Inhalte zu Regulierung, Kosten und Handelsgrundlagen.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Navigation</div>
+        <a href="/#vergleich">Broker Vergleich</a>
+        <a href="/was-sind-cfds">Was sind CFDs?</a>
+        <a href="/#regulierung">Regulierung</a>
+        <a href="/#kosten">Kosten</a>
+        <a href="/cfd-broker-ausfuehrungsmodelle">Ausführungsmodelle</a>
+        <a href="/cfd-demokonto-broker-testen">Demokonto</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Rechtliches</div>
+        <a href="/impressum">Impressum</a>
+        <a href="/datenschutzerklaerung">Datenschutzerklärung</a>
+        <a href="/risikohinweis">Risikohinweis</a>
+        <a href="/affiliate-hinweis">Affiliate-Hinweis</a>
+        <a href="/cookie-richtlinie">Cookie-Richtlinie</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Über uns</div>
+        <a href="/ueber-diesen-guide">Über diesen Guide</a>
+        <a href="/redaktionelle-richtlinien">Redaktionelle Richtlinien</a>
+        <a href="/methodik">Methodik & Bewertungskriterien</a>
+        <a href="/quellen">Unsere Quellen</a>
+        <a href="/korrekturen">Korrekturen & Aktualisierungen</a>
+        <a href="/kontakt">Kontakt</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CFD Broker Vergleich Deutschland · Alle Inhalte dienen ausschließlich Informationszwecken · Kein Anlageberatungscharakter</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+<script src="assets/calculator.js"></script>
+</body>
+</html>

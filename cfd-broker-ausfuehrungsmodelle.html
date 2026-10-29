@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Maker vs. STP vs. ECN: CFD Ausführungsmodelle erklärt (2026)</title>
+<meta name="description" content="Market Maker, STP und ECN im Vergleich: Wie CFD Broker Orders ausführen, welche Kostenstruktur dahintersteckt und für wen sich welches Modell eignet.">
+<link rel="canonical" href="https://guter-cfd-broker.de/cfd-broker-ausfuehrungsmodelle">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:title" content="Market Maker vs. STP vs. ECN: CFD Ausführungsmodelle erklärt">
+<meta property="og:description" content="Wie CFD Broker Orders ausführen und für wen sich welches Modell eignet.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://guter-cfd-broker.de/cfd-broker-ausfuehrungsmodelle">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Market Maker vs. STP vs. ECN: CFD Ausführungsmodelle erklärt",
+  "url": "https://guter-cfd-broker.de/cfd-broker-ausfuehrungsmodelle",
+  "description": "Market Maker, STP und ECN im Vergleich: Wie CFD Broker Orders ausführen, welche Kostenstruktur dahintersteckt und für wen sich welches Modell eignet.",
+  "inLanguage": "de",
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-08-28",
+  "author": { "@type": "Organization", "name": "CFD Broker Vergleich Deutschland" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://guter-cfd-broker.de/" },
+    { "@type": "ListItem", "position": 2, "name": "Ausführungsmodelle", "item": "https://guter-cfd-broker.de/cfd-broker-ausfuehrungsmodelle" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Was bedeutet Dealing Desk?", "acceptedAnswer": { "@type": "Answer", "text": "Ein Dealing Desk bedeutet, dass der Broker selbst als Gegenpartei der Kundenorder auftritt, statt sie an einen externen Liquiditätsanbieter weiterzuleiten. Market-Maker-Broker arbeiten typischerweise mit Dealing Desk, ECN- und STP-Broker in der Regel ohne." } },
+    { "@type": "Question", "name": "Was ist ein Requote?", "acceptedAnswer": { "@type": "Answer", "text": "Ein Requote liegt vor, wenn der ursprünglich angeforderte Ausführungskurs nicht mehr verfügbar ist und der Broker einen neuen Kurs zur Bestätigung vorschlägt. Bei Market-Maker-Modellen kommt dies gelegentlich vor, bei ECN-Ausführung ist das Risiko deutlich geringer." } },
+    { "@type": "Question", "name": "Welches Ausführungsmodell ist für Einsteiger am besten geeignet?", "acceptedAnswer": { "@type": "Answer", "text": "Market-Maker-Modelle haben häufig eine niedrigere Einstiegshürde und eine einfachere Kostenstruktur ohne separate Kommission, was sie für Einsteiger zugänglich macht. Aktive Trader und Scalper bevorzugen häufig STP- oder ECN-Modelle wegen der engeren Rohspreads." } },
+    { "@type": "Question", "name": "Kann ein Broker mehrere Ausführungsmodelle gleichzeitig anbieten?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, manche Broker bieten unterschiedliche Kontotypen mit verschiedenen Ausführungsmodellen an, etwa ein Standardkonto mit Market-Maker-Ausführung und ein Pro-Konto mit ECN-Ausführung gegen eine Kommission." } }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo" aria-label="Startseite">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+      CFD Broker Vergleich
+    </a>
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="/#vergleich">Broker Vergleich</a>
+      <a href="/#regulierung">Regulierung</a>
+      <a href="/#kosten">Kosten</a>
+      <a href="/was-sind-cfds">Was sind CFDs?</a>
+      <a href="/cfd-demokonto-broker-testen">Demokonto</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Suche öffnen">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a class="btn-header" href="https://libertex.com/de/" rel="sponsored noopener" target="_blank">Zum Demokonto</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="article-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Startseite</a><span aria-hidden="true">/</span><span aria-current="page">Ausführungsmodelle</span>
+    </nav>
+    <span class="eyebrow">Ausführung</span>
+    <h1>Market Maker vs. STP vs. ECN: CFD Ausführungsmodelle erklärt</h1>
+    <p class="article-lead">Das Ausführungsmodell eines Brokers bestimmt, wie Orders zustande kommen, wer als Gegenpartei auftritt und wie sich die Kosten zusammensetzen. Dieser Artikel erklärt die drei gängigsten Modelle im Detail.</p>
+    <div class="article-meta">
+      <span>Letzte Überprüfung: August 2026</span>
+      <span>Lesezeit: ca. 5 Min.</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container article-body">
+    <h2>Market Maker</h2>
+    <p>Bei einem Market-Maker-Broker tritt der Broker selbst als Gegenpartei der Kundenposition auf. Der Spread wird in den angezeigten Kurs eingearbeitet, eine separate Kommission fällt in der Regel nicht an. Dieses Modell arbeitet häufig mit einem Dealing Desk, wodurch in seltenen Fällen Requotes auftreten können. Die Einstiegshürde ist meist niedrig, was das Modell für Einsteiger zugänglich macht.</p>
+
+    <h2>STP (Straight Through Processing)</h2>
+    <p>STP-Broker leiten Kundenorders direkt an externe Liquiditätsanbieter weiter, ohne selbst als Gegenpartei aufzutreten. Der Rohspread der Liquiditätsanbieter wird um eine Marge des Brokers ergänzt, eine Kommission fällt gering oder gar nicht an. Das Requote-Risiko ist geringer als bei Market-Maker-Modellen, da kein Dealing Desk eingreift.</p>
+
+    <h2>ECN (Electronic Communication Network)</h2>
+    <p>ECN-Broker leiten Orders in ein Netzwerk aus Banken, Liquiditätsanbietern und anderen Marktteilnehmern weiter. Trader erhalten dadurch Zugang zu sehr engen Rohspreads, zahlen dafür aber eine volumenbasierte Kommission. Requotes sind bei diesem Modell minimal, da die Ausführung direkt im Netzwerk erfolgt.</p>
+
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <caption>Ausführungsmodelle im direkten Vergleich</caption>
+        <thead><tr><th>Merkmal</th><th>Market Maker</th><th>STP</th><th>ECN</th></tr></thead>
+        <tbody>
+          <tr><td>Gegenpartei</td><td>Broker</td><td>Weiterleitung</td><td>Netzwerk</td></tr>
+          <tr><td>Spread</td><td>eingearbeitet</td><td>Rohspread + Marge</td><td>Rohspread + Kommission</td></tr>
+          <tr><td>Kommission</td><td>keine</td><td>gering/keine</td><td>ja, volumenbasiert</td></tr>
+          <tr><td>Dealing Desk</td><td>ja</td><td>nein</td><td>nein</td></tr>
+          <tr><td>Requote-Risiko</td><td>möglich</td><td>gering</td><td>minimal</td></tr>
+          <tr><td>Geeignet für</td><td>Einsteiger</td><td>aktive Trader</td><td>Scalper</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Welches Modell passt zu welchem Trading-Stil?</h2>
+    <p>Für gelegentliche, mittelfristig gehaltene Positionen spielt das Ausführungsmodell eine untergeordnete Rolle gegenüber der Gesamtkostenbetrachtung. Für Scalper und sehr aktive Trader, die auf enge Spreads und minimale Slippage angewiesen sind, ist ein ECN- oder STP-Modell in der Regel besser geeignet. Ein Blick in die konkrete <a href="/cfd-broker-kosten-vergleich">Kostenstruktur</a> des jeweiligen Brokers ist in jedem Fall empfehlenswert.</p>
+
+    <div class="inline-cta">
+      <p>Wie sich Ausführungsqualität und Spread in der Praxis verhalten, lässt sich am besten über ein Demokonto beobachten.</p>
+      <a class="btn-primary" href="https://libertex.com/de/" rel="sponsored noopener" target="_blank">Jetzt Demokonto testen</a>
+    </div>
+
+    <h2>Häufig gestellte Fragen</h2>
+    <div class="faq-list" style="margin-top:16px;">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Was bedeutet Dealing Desk?<svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-answer"><p>Ein Dealing Desk bedeutet, dass der Broker selbst als Gegenpartei der Kundenorder auftritt, statt sie an einen externen Liquiditätsanbieter weiterzuleiten. Market-Maker-Broker arbeiten typischerweise mit Dealing Desk, ECN- und STP-Broker in der Regel ohne.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Was ist ein Requote?<svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-answer"><p>Ein Requote liegt vor, wenn der ursprünglich angeforderte Ausführungskurs nicht mehr verfügbar ist und der Broker einen neuen Kurs zur Bestätigung vorschlägt. Bei Market-Maker-Modellen kommt dies gelegentlich vor, bei ECN-Ausführung ist das Risiko deutlich geringer.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Welches Ausführungsmodell ist für Einsteiger am besten geeignet?<svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-answer"><p>Market-Maker-Modelle haben häufig eine niedrigere Einstiegshürde und eine einfachere Kostenstruktur ohne separate Kommission, was sie für Einsteiger zugänglich macht. Aktive Trader und Scalper bevorzugen häufig STP- oder ECN-Modelle wegen der engeren Rohspreads.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Kann ein Broker mehrere Ausführungsmodelle gleichzeitig anbieten?<svg class="faq-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-answer"><p>Ja, manche Broker bieten unterschiedliche Kontotypen mit verschiedenen Ausführungsmodellen an, etwa ein Standardkonto mit Market-Maker-Ausführung und ein Pro-Konto mit ECN-Ausführung gegen eine Kommission.</p></div>
+      </div>
+    </div>
+
+    <h2>Weiterführende Themen</h2>
+    <div class="related-mini">
+      <a href="/cfd-broker-kosten-vergleich">Kosten im Vergleich</a>
+      <a href="/was-sind-cfds">Was sind CFDs?</a>
+      <a href="/cfd-broker-regulierung-bafin">BaFin-Regulierung</a>
+      <a href="/cfd-demokonto-broker-testen">Demokonto testen</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="risk-disclosure" role="region" aria-label="Risikohinweis">
+  <div class="container risk-disclosure-inner">
+    <svg class="risk-icon" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2z"/><path d="M12 9v5"/></svg>
+    <p class="risk-text"><strong>Risikohinweis:</strong> Differenzkontrakte (CFDs) sind komplexe Instrumente, die aufgrund der Hebelwirkung mit einem hohen Risiko des schnellen Geldverlustes verbunden sind. Zwischen 74 % und 89 % der Kleinanlegerkonten verlieren Geld beim CFD-Handel (Quelle: ESMA). Dieser Inhalt dient ausschließlich Informationszwecken und stellt keine Anlageberatung dar. Letzte Aktualisierung: August 2026.</p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><svg class="icon footer-brand-icon" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>CFD Broker Vergleich</div>
+        <p>Unabhängiger Informationsguide für CFD Broker in Deutschland. Bildungsorientierte Inhalte zu Regulierung, Kosten und Handelsgrundlagen.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Navigation</div>
+        <a href="/#vergleich">Broker Vergleich</a>
+        <a href="/was-sind-cfds">Was sind CFDs?</a>
+        <a href="/#regulierung">Regulierung</a>
+        <a href="/#kosten">Kosten</a>
+        <a href="/cfd-broker-ausfuehrungsmodelle">Ausführungsmodelle</a>
+        <a href="/cfd-demokonto-broker-testen">Demokonto</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Rechtliches</div>
+        <a href="/impressum">Impressum</a>
+        <a href="/datenschutzerklaerung">Datenschutzerklärung</a>
+        <a href="/risikohinweis">Risikohinweis</a>
+        <a href="/affiliate-hinweis">Affiliate-Hinweis</a>
+        <a href="/cookie-richtlinie">Cookie-Richtlinie</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Über uns</div>
+        <a href="/ueber-diesen-guide">Über diesen Guide</a>
+        <a href="/redaktionelle-richtlinien">Redaktionelle Richtlinien</a>
+        <a href="/methodik">Methodik & Bewertungskriterien</a>
+        <a href="/quellen">Unsere Quellen</a>
+        <a href="/korrekturen">Korrekturen & Aktualisierungen</a>
+        <a href="/kontakt">Kontakt</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CFD Broker Vergleich Deutschland · Alle Inhalte dienen ausschließlich Informationszwecken · Kein Anlageberatungscharakter</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

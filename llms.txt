@@ -1,0 +1,29 @@
+# guter-cfd-broker.de
+
+## Beschreibung
+Unabhängiger Informations- und Vergleichsguide für CFD Broker in Deutschland (2026).
+
+## Zielgruppe
+Retail-Trader in Deutschland; Einsteiger und Fortgeschrittene.
+
+## Hauptseite
+- URL: https://guter-cfd-broker.de/
+- Markdown-Version: https://guter-cfd-broker.de/content.md
+- Thema: Guter CFD Broker – Vergleich, Regulierung und Auswahlkriterien
+
+## Seiten
+- / — Hub: Guter CFD Broker Vergleich
+- /cfd-broker-regulierung-bafin — BaFin-regulierte CFD Broker
+- /cfd-broker-kosten-vergleich — Spread, Kommission, Swap
+- /was-sind-cfds — Was sind CFDs?
+- /cfd-broker-ausfuehrungsmodelle — Market Maker vs. STP vs. ECN
+- /cfd-trade-kosten-berechnen — Beispielrechnung DAX-CFD
+- /cfd-overnight-kosten-swap — Overnight-Kosten
+- /cfd-vs-etf-kostenvergleich — CFD vs. ETF
+- /cfd-broker-ohne-mindesteinzahlung — Broker ohne Mindesteinzahlung
+- /cfd-demokonto-broker-testen — Demokonto testen
+- /cfd-gewinne-versteuern — CFD-Gewinne versteuern in Deutschland
+
+## Compliance
+Alle Inhalte sind rein informativ. Kein Anlageberatungscharakter.
+ESMA: 74–89% der Retail-CFD-Konten verlieren Geld.
